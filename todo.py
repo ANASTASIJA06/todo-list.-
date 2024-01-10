@@ -6,19 +6,25 @@
 # 
 
 def add(list, item):
+  list.append(item)
   pass
 
 
 def remove(list, index):
+  list.pop(index)
   pass
 
 
 def clear(list):
+  list.clear()
   pass
 
 
 def print_list(list):
-  pass
+    for x in range(len(list)):
+
+      print(x, " ", list[x]) 
+pass
 
 
 list = []
@@ -39,4 +45,3 @@ while True:
   elif choice == 4:
     print_list(list)
   else:
-    print("Invalid input")
